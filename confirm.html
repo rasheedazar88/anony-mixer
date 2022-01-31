@@ -1,0 +1,318 @@
+<html>
+    <head><title>BC-Sec</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="anony-mixer.css">
+        <link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+            <script>
+                function darkmode() {
+                   var element = document.body;
+                   element.classList.toggle("dark");
+                }
+                </script>
+
+       <!-- script for coloumn first child animation animation -->
+       <script>
+            $(document).ready(function(){
+                $(".col_first_child").hover(function(){
+                    $(this).find('.col_container_animate_box1').css("margin-top","0px");
+                    $(this).find('.col_container_animate_box2').css("margin-top","38px");
+                    $(this).find('.col_container_animate_box3').css("margin-top","0px");
+                    $(this).find('.col_container_animate_box4').css("margin-top","38px");
+                    }, 
+                    function(){
+                    $(this).find('.col_container_animate_box1').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box2').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box3').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box4').css("margin-top","18px");
+                });
+            });
+          </script>
+        <!-- end -->
+
+        <!-- script for coloumn round img animation -->
+        <script>
+            $(document).ready(function(){
+            $(".col_sec_child, .col_last_child").hover(function(){
+                $(this).find('.sec_child').css("filter","none");
+                $(this).find('.last_child').css("filter","none");
+                }, function(){
+                $(this).find('.sec_child').css("filter","grayscale(1)");
+                $(this).find('.last_child').css("filter","grayscale(1)");
+            });
+            });
+        </script>
+        <!-- end -->
+
+        <!-- script for box display img -->
+        <script>
+            $(document).ready(function(){
+                $(".for_onion, .for_js, .for_cdn, .for_lock, .for_phone, .for_lock2").hover(function(){
+                    $(this).find('.img_onion').css("filter","none");
+                    $(this).find('.img_js').css("filter","none");
+                    $(this).find('.img_cdn').css("filter","none");
+                    $(this).find('.img_lock').css("filter","none");
+                    $(this).find('.img_phone').css("filter","none");
+                    $(this).find('.img_lock2').css("filter","none");
+                    }, 
+                    function(){
+                    $(this).find('.img_onion').css("filter","grayscale(1)");
+                    $(this).find('.img_js').css("filter","grayscale(1)");
+                    $(this).find('.img_cdn').css("filter","grayscale(1)");
+                    $(this).find('.img_lock').css("filter","grayscale(1)");
+                    $(this).find('.img_phone').css("filter","grayscale(1)");
+                    $(this).find('.img_lock2').css("filter","grayscale(1)");
+                });
+            });
+          </script>
+        <!-- end -->
+
+    </head>
+    
+    <body>
+     <!-- code for navbar -part-1 -->
+        <div class="nav_bar">
+            <div class="nav_bar nav_container">
+                    <ul class="nav_left_ul_content ">
+                    <li>
+                        <a class="top_li_link active_link" href="#">Start a new Mix!</a>   
+                    </li>    
+                    <li>
+                        <a class="top_li_link" href="#">Help Center</a>  
+                    </li>
+                    </ul>   
+                <div>
+                    <img class="nav_bar top_logo" src="./image/logo.jpg" alt="company name">
+                </div>
+                <div class="nav_right_content ">
+                    <div class="top_right_li_content">
+                        <button class="top_right_dropbtn">LN <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="top_right_dropdown-lag">
+                          <li data-id="en">EN</li>
+                          <li data-id="ta">FR</li>
+                          <li data-id="ko">AR</li>
+                        </div>
+                    </div>
+                    <div class="top_right_li_content_one">
+                        <button class="top_right_dropbtn">IND <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="top_right_dropdown-cun">
+                          <li data-id="en">EN</li>
+                          <li data-id="ta">FR</li>
+                          <li data-id="ko">AR</li>
+                        </div>
+                    </div>
+
+                    <div onclick="darkmode()" class="top_right_mode">
+                        <img src="./image/moon.png">
+                    </div>
+                </div>  
+            </div>   
+        </div>
+        <!-- end -->
+
+<!-- addressing and calculate -part-2 -->
+        <div class="main_container">
+            <div class="title_content">
+                
+                <h6 class="header-pretitle">Start a new Bitcoin Coinmix<h6>
+                    <h1 class="header-title"> Confirmation</h1>
+
+                        <div class="header_ nav topnav">
+                            <a href="./index.html"> Outputs</a>
+                            <a class="act_header"  href=""> Confirm</a>
+                            <a href="./mix.html">Mix</a>
+                            </div>  
+                        </div>
+        </div>
+        <div class="container_p2">
+            <div class="confirm_container">
+
+                    <div class="break_header">
+                        <h3> Breakdown of costs</h3>
+                    </div>
+
+                    <div class="break_content">
+                        <p>
+                            Please see an up-front and complete breakdown of costs below, the grand total of what you need to send to the mixer is shown at the bottom. Once you are happy, please press Confirm.
+                        </p>
+                    </div>
+
+                       <!-- first dropdown-content -->
+                       <div class="main_btc_detail_dropdown_container_p2">
+                        <button class="btc_detail_accordion_p2">Total Output
+                            <div class="btc_indicate_p2">
+                                <span class="btc_indicate_qty">1</span>
+                                <span class="btc_indicate_name">BTC</span>
+                            </div>
+                        </button>
+                            <div class="dropdown_panel_p2">
+                                <div class="dropdown_sub_panel_p2">
+                                    <div class="round_logo">
+                                        <div class="round_logo_image">
+                                        <label class="logo_address">#1</label>
+                                        </div>
+                                    </div>
+                                    <div class="btc_address_display">
+                                        <div class="btc_validate_address">jzchvihdsyafdfnmjsXNCkjjOUIUDHICuahbjKDSc</div>
+                                        <div class="btc_validate_values"><span class="green_dot">.</span> will receive<span class="btc_qua">BTC</span><span class="value_for_btc">(Approx @34556.12)</span></div>
+                                    </div>
+            
+                                    <div class="btc_value_input">
+                                        <label>Delay in Minutes</label>
+                                        <input type="number" value="2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- end -->
+
+                      <!-- second dropdown-content -->
+                      <div class="main_btc_detail_dropdown_container_p2">
+                        <button class="btc_detail_accordion_p2">Fees Service
+                            <div class="btc_indicate_p2">
+                                <span class="btc_indicate_qty">00000.76557</span>
+                                <span class="btc_indicate_name">BTC</span>
+                            </div>
+                        </button>
+                        <div class="dropdown_panel_p2">
+                            <ul>
+                                <li>
+                                <div class="dropdown_sub_panel_p2">
+                                    <div class="round_logo">
+                                        <div class="round_logo_image">
+                                        <label class="logo_address"><img class="img_axe" src="./image/axe.png"></label>
+                                        </div>
+                                    </div>
+                                    <div class="btc_address_display">
+                                        <div class="btc_validate_address">jzchvihdsyafdfnmjsXNCkjjOUIUDHICuahbjKDSc</div>
+                                        <div class="btc_validate_values"><span class="green_dot">.</span> will receive<span class="btc_qua">BTC</span><span class="value_for_btc">(Approx @34556.12)</span></div>
+                                    </div>
+                                </div>
+                                <li>
+                                <li>
+                                    <div class="dropdown_sub_panel_p2">
+                                        <div class="round_logo">
+                                            <div class="round_logo_image dark-bg">
+                                            <label class="logo_address"><img class="img_mask" src="./image/mask.png"></label>
+                                            </div>
+                                        </div>
+                                        <div class="btc_address_display">
+                                            <div class="btc_validate_address">jzchvihdsyafdfnmjsXNCkjjOUIUDHICuahbjKDSc</div>
+                                            <div class="btc_validate_values"><span class="green_dot">.</span> will receive<span class="btc_qua">BTC</span><span class="value_for_btc">(Approx @34556.12)</span></div>
+                                        </div>
+                                    </div>
+                                    <li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- end -->
+
+                 <!-- btc details content -->
+                 <div class="break_header">
+                    <h3>Grand Total</h3>
+                </div>
+                    <div class="break_content">
+                        <p>The total amount of Bitcoin you will need to send the mixer</p>
+                    </div>
+
+                    <div class="clac_box box_p2">
+                        <div class="total_btc_box btc_box_p2">Total Bitcoin<span class="num_of_btc">0</span><img class="coin_img" src="./image/bit-coin.png"></div>
+                        <div class="approx_value_box value_box_p2"> Total Fiat(Approximate)<span class="value_of_btc">@0.00</span></div>
+                    </div>
+                <div class="contn_btn_p2">
+                    <button type="submit"> Continue</button>
+                </div>
+            <!-- end -->
+    </div>
+    </div>
+
+<!-- footer -->
+<footer>
+    <div class="foot_container">
+        <div class="foot_col_container">
+
+            <div class="foot_first_col foot">
+                <ul>
+                    <li>Hot Trade Maximum<span class="hot_max">0.1309</span></li>
+                    <li> Cold Trade Maximum<span class="cold_max">0.1309</span></li>
+                    <li> Service Status <span><img src="./image/correct-tick.png"></span></li>
+                </ul>
+            </div>
+
+            <div class="foot_second_col foot">
+                <lable class="foot_link_header">Links</lable>
+                    <ul>
+                        <li><a href="#">PGP Key</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Canary</a></li>
+                        <li>Email:<a href="#">support@anonymixer.com</a></li>
+                    </ul>
+                    <div class="foot_icons">
+                        <div class="tooltip-bitcoin">
+                        <img class="img_bc" src="./image/bit-coin.png">
+                        
+                        <span class="bitcoin-tooltiptext">Bitcoin Talk</span>
+                        </div>
+                        <div class="tooltip-twitter">
+                        <img class="img_twit" src="./image/twitter1.png">
+
+                        <span class="twitter-tooltiptext">Twitter</span>
+                        </div>
+                        <div class="tooltip-dark">
+                        <img class="img_dar-k" src="./image/darkimg10.png">
+                        <span class="dark-tooltiptext">Darknetive</span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="foot_third_col foot">
+                <lable class="foot_link_header">Clearnet Address</lable>
+                <ul>
+                    <li><a href="#">https://anonymixer.com</a></li>
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./image/onion.png">
+                            </div>
+                            <div class="tooltip_content">    
+                                <div>
+                                <span><a>Onion V2</a></span>
+                                </div>
+                                <div>
+                                <span><a>Onion V3</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="copy"> Copyright © 2022 <a href="#">Anonymixer</a>. All rights reserved.
+        </div>
+    </div>
+</footer>
+<!-- end -->
+
+</body>
+<script>
+var acc = document.getElementsByClassName("btc_detail_accordion_p2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "0px";
+    } 
+  });
+}
+</script>
+</html>

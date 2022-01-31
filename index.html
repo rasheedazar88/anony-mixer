@@ -1,0 +1,494 @@
+<html>
+    <head><title>BC-Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="anony-mixer.css">
+        <link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+            <script>
+                function darkmode() {
+                   var element = document.body;
+                   element.classList.toggle("dark");
+                }
+                </script>
+
+       <!-- script for coloumn first child animation animation -->
+       <script>
+            $(document).ready(function(){
+                $(".col_first_child").hover(function(){
+                    $(this).find('.col_container_animate_box1').css("margin-top","0px");
+                    $(this).find('.col_container_animate_box2').css("margin-top","38px");
+                    $(this).find('.col_container_animate_box3').css("margin-top","0px");
+                    $(this).find('.col_container_animate_box4').css("margin-top","38px");
+                    }, 
+                    function(){
+                    $(this).find('.col_container_animate_box1').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box2').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box3').css("margin-top","18px");
+                    $(this).find('.col_container_animate_box4').css("margin-top","18px");
+                });
+            });
+          </script>
+        <!-- end -->
+
+        <!-- script for coloumn round img animation -->
+        <script>
+            $(document).ready(function(){
+            $(".col_sec_child, .col_last_child").hover(function(){
+                $(this).find('.sec_child').css("filter","none");
+                $(this).find('.last_child').css("filter","none");
+                }, function(){
+                $(this).find('.sec_child').css("filter","grayscale(1)");
+                $(this).find('.last_child').css("filter","grayscale(1)");
+            });
+            });
+        </script>
+        <!-- end -->
+
+        <!-- script for box display img -->
+        <script>
+            $(document).ready(function(){
+                $(".for_onion, .for_js, .for_cdn, .for_lock, .for_phone, .for_lock2").hover(function(){
+                    $(this).find('.img_onion').css("filter","none");
+                    $(this).find('.img_js').css("filter","none");
+                    $(this).find('.img_cdn').css("filter","none");
+                    $(this).find('.img_lock').css("filter","none");
+                    $(this).find('.img_phone').css("filter","none");
+                    $(this).find('.img_lock2').css("filter","none");
+                    }, 
+                    function(){
+                    $(this).find('.img_onion').css("filter","grayscale(1)");
+                    $(this).find('.img_js').css("filter","grayscale(1)");
+                    $(this).find('.img_cdn').css("filter","grayscale(1)");
+                    $(this).find('.img_lock').css("filter","grayscale(1)");
+                    $(this).find('.img_phone').css("filter","grayscale(1)");
+                    $(this).find('.img_lock2').css("filter","grayscale(1)");
+                });
+            });
+          </script>
+        <!-- end -->
+
+
+    </head>
+    <body>
+     <!-- code for navbar -part-1 -->
+        <div class="nav_bar">
+            <div class="nav_bar nav_container">
+                    <ul class="nav_left_ul_content ">
+                    <li>
+                        <a class="top_li_link active_link" href="#">Start a new Mix!</a>   
+                    </li>    
+                    <li>
+                        <a class="top_li_link" href="#">Help Center</a>  
+                    </li>
+                    </ul>   
+                <div>
+                    <img class="nav_bar top_logo" src="./image/logo.jpg" alt="company name">
+                </div>
+                <div class="nav_right_content ">
+                    <div class="top_right_li_content">
+                        <button class="top_right_dropbtn">LN <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="top_right_dropdown-lag">
+                          <li data-id="en">EN</li>
+                          <li data-id="ta">FR</li>
+                          <li data-id="ko">AR</li>
+                        </div>
+                    </div>
+                    <div class="top_right_li_content_one">
+                        <button class="top_right_dropbtn">IND <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="top_right_dropdown-cun">
+                          <li data-id="en">EN</li>
+                          <li data-id="ta">FR</li>
+                          <li data-id="ko">AR</li>
+                        </div>
+                    </div>
+
+                    <div onclick="darkmode()" class="top_right_mode">
+                        <img src="./image/moon.png">
+                    </div>
+                </div>  
+            </div>   
+        </div>
+        <!-- end -->
+
+<!-- addressing and calculate -part-2 -->
+        <div class="main_container">
+            <div class="title_content">
+                
+                <h6 class="header-pretitle">Start a new Bitcoin Coinmix<h6>
+                    <h1 class="header-title"> Enter Output Addresses</h1>
+
+                        <div class="header_ nav topnav">
+                            <a class="act_header" href="#"> Outputs</a>
+                            <a href="./confirm.html"> Confirm</a>
+                                <a href="./mix.html">Mix</a>
+                            </div>
+                             <div class="btc_insert_container_bic1">
+                                <div class="btc_insert_container_bic2">
+                                    <div class="add_box">
+                                     <label for="fname">Output Address # <span class="inxed_identity">1</span></label>
+                                      <input type="text" id="btc_add" name="btc_add" placeholder="Address receiving the anonymized Bitcoin"/>
+                                     </div>
+                                    <div class="amt_box">
+                                     <label for="lname">Amount(BTC)</label>
+                                      <input type="text" id="lname" name="lastname" placeholder="0.00" />
+                                    </div>
+                                </div>
+                            <div class="contn_btn_1">
+                                <button type="submit"> Add Output Address</button>
+                                <button type="submit"> Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="clac_box">
+                            <div class="total_btc_box">Total Bitcoin<span class="num_of_btc">0</span><img class="coin_img" src="./image/bit-coin.png"></div>
+                            <div class="approx_value_box"> Total Fiat(Approximate)<span class="value_of_btc">@0.00</span></div>
+                        </div>
+        </div>
+    </div>
+  <!-- inside dark bg coloumn content -->
+
+            <div class="dark_bg_container">
+                <div class="dark_bg_top">
+                </div>
+                        <div class="dark_bg_image_container">
+                            <div class="dark_bg_content">
+                                <div class="dark_bg_image_t1">
+                                    <h1>Anonymous Bitcoin Mixer</h1>
+                                        </div>
+                                        <div class="dark_bg_image_t2">
+                                    <h1>We make your Bitcoin Anonymous</h1>
+                                </div>
+                            </div>
+
+                            <div class="dark_bg_image_col">
+                                <div class="dark_bg_image_col_1">
+                                <h1>Low Minimum</h1>
+                                    <p>Mix just 0.001 BTC</p>
+                                </div>
+                                    <div class="dark_bg_image_col_2">
+                                        <h1>No Logs</h1>
+                                        <p>We have a 100% No-Logs Policy</p>
+                                    </div>
+                                <div class="dark_bg_image_col_3">
+                                    <h1>Low Fees</h1>
+                                    <p>We charge just 1 - 2% to mix Bitcoin</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+  <!-- end -->
+
+<!-- first animating content -->
+                    <div class="ani_container_1">
+                        <div class="inside_ani_container_1">
+                            <div>
+                                <img class="hidden_1" src="./image/hidden-men.png">
+                                    </div>
+
+                                        <div>
+                                            <img  class="laptop-men_1" src="./image/laptop-men.png">
+                                            
+                                        <div>
+                                            <img class="cloud_1" src="./image/cloud__1_-removebg-preview.png">
+
+                                        <div>
+                                            <img class="bcn_1" src="./image/bit-coin.png">
+
+                                        <div>
+                                            <img class="name_1" src="./image/name.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- end -->
+
+<!-- block and tele content -->
+
+                <div class='bch_container'>
+                    <div class='bch_1'>
+                        <div class='animated-fadein-1'>
+                            <h1 class='bch-header'>Beat Blockchain Surveillance</h1>
+                            <p class='bch-contant'>Companies like Chainalysis invade your privacy by providing blockchain surveillance data and analysis to Governments, Exchanges and Financial Institutions. </p>
+
+                            <p class='bch-contant'>For years, these companies have spared no expense perfecting software to track Bitcoin and Bitcoin Users, turning mass surveillance into a fine art. </p>
+                            <p class='bch-contant'>With Anonymixer, you can 100% protect your privacy and escape this intrusive surveillance, even to the extent that <strong> no-one will be able to tell you used a Bitcoin Mixer</strong> in the first place. </p>
+
+                        </div>
+                    </div>	
+                </div>
+
+
+                <div class='btc-teleportation-container'>
+                    <div class='btc-2'>
+                        <div class='animated fadeInUp'>
+                            <h1 class='btc-header-1'>Bitcoin Teleportation </h1>
+                            <p class='btc-contant'>Alice wants to pay Bob 0.5 BTC, anonymously.</p>
+                                <p class='btc-contant'>Alice sends a payment of 0.2 BTC followed by 0.3 BTC to Anonymixer's Deposit Wallet.</p>
+                                    <p class='btc-contant'>Then, Anonymixer sends Bob 0.5 BTC from a separate Wallet that is entirely unconnected from either of Alice's payments.</p>
+                                        <h1 class='btc-header-2'>Blockchain Analysis is rendered useless</h1>
+                                        <p class='btc-contant'><strong>Amount Decorrelation </strong>:- Alice made two regular Bitcoin Payments to two anonymous Bitcoin Addresses, neither of which can be correlated with the 0.5 BTC Bob finally received.</p>
+                                            <p class='btc-contant'><strong>Time Decorrelation</strong> :- Alice chose exactly when each of her individual deposits were sent. Alice also chose exactly when Bob finally got paid.</p>
+                                                <p class='btc-contant'><strong>Cluster Decorrelation</strong> :- The Wallet (or Cluster) Alice sent her Bitcoin to, itself is entirely unconnected to the Wallet which paid Bob.</p>
+                                                    <p class='btc-contant'>All Transactions look like regular payments between users on the Blockchain. No-one can tell a Bitcoin Mixer has been used.</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+<!-- end -->
+
+<!-- coloumn- part -->
+
+<!-- 1rd col container -->
+          <div class="col_main_container">
+                    <div class="col_container col_first_child">
+                        <div class="col_container_avtr">
+                            <div class="col_container_animate">
+                                <div class="col_container_animate_line">
+                                    <div class="col_container_animate_box1"></div>
+                                </div>
+
+                                    <div class="col_container_animate_line">
+                                        <div class="col_container_animate_box2"></div>
+                                    </div>
+
+                                    <div class="col_container_animate_line">
+                                        <div class="col_container_animate_box3"></div>
+                                    </div>
+
+                                    <div class="col_container_animate_line">
+                                        <div class="col_container_animate_box4"></div>
+                                    </div>
+                            </div>
+                            </div>
+
+                            <div class="coloumn_header">
+                                <h1>Full Mixing Control</h1>
+                            </div>
+                            <ul>
+                                <li>Up to 20 Output Addresses</li>
+                                <li>Up to 10 Deposit Addresses</li>
+                                <li>Spread deposits over time</li>
+                                <li>Spread outgoing payments over time</li>
+                            </ul>
+                            <p>We let you know exact service fees up-front before you send any Bitcoin to the Mixer, so there are no hidden surprises.
+                                </p>
+                </div>
+<!-- 1st col end -->
+
+<!-- 2rd col container  -->
+                <div class="col_container col_sec_child">
+                    <div class="col_container_avtr">
+                       <img class="sec_child" src="./image/signature.png">
+                        </div>
+
+                        <div class="coloumn_header">
+                            <h1>Letter of Guarantee</h1>
+                        </div>
+                       
+                        <p>"We provide a Letter of Guarantee in both Text and PDF formats. We Digitally Sign these to "prove" they're from us."</p>
+                           <p> "If we ran off with a user's funds "<strong>"just once"</strong> " and this became publicly known, that would be the end of our reputation and no-one would use us ever again."</p>
+            </div>
+<!-- 2nd col end -->
+
+<!-- 3rd col container  -->
+            <div class="col_container col_last_child">
+                <div class="col_container_avtr">
+                    <img class="last_child" src="./image/service.png">
+                    </div>
+
+                    <div class="coloumn_header">
+                        <h1>Full Mixing Control</h1>
+                    </div>
+                
+                    <p>"If you face any problems of any kind, we respond quickly to emails sent to  <a href="#">"support@anonymixer.com"</a>
+                    </p>
+                    <p>"We're on " <a href="#">Bitcoin Talk</a>" and " <a href="#">"Twitter"</a></p>
+                    <p>Come say Hello!</p>
+        </div>
+
+    </div>
+<!-- 3rd col end -->
+
+<!-- box content part -->
+<div class="box_main_container">
+    <div class="box_align_container">
+            <div class="box_container for_onion">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img  class="img_onion" src="./image/onion.png"> </div>           
+                    </div>
+                        <h3>Tor Support</h3>
+                        <p>Onion Address available</p>
+                </div>
+            </div>
+
+            <div class="box_container for_js">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img class="img_js" src="./image/js.png"> </div>           
+                    </div>
+                        <h3>No JS = No Problem</h3>
+                        <p> Works with or without JavaScript</p>
+                </div>
+            </div>
+
+            <div class="box_container for_cdn">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img class="img_cdn" src="./image/cut.png"> </div>           
+                    </div>
+                        <h3>No CDNs</h3>
+                        <p>We don't use CDNs or Google Analytics.<a href=''> Find out whye</a></p>
+                </div>
+            </div>
+
+            <div class="box_container for_lock">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img class="img_lock" src="./image/lock.png"> </div>           
+                    </div>
+                        <h3>Hardest Encryption</h3>
+                        <p>We have a <a href=''>SSL Labs Grade A </a>rating</p>
+                </div>
+            </div>
+
+            <div class="box_container for_phone">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img class="img_phone" src="./image/mobile.png"> </div>           
+                    </div>
+                        <h3>Phone Friendly</h3>
+                        <p>Works on Smart Phones and Tablets</p>
+                </div>
+            </div>
+
+            <div class="box_container for_lock2">
+                <div class="box_av_container">
+                    <div class="box_bg_image">
+                        <div class="display_icon"><img class="img_lock2" src="./image/lock.png"> </div>           
+                    </div>
+                        <h3>No HTTP</h3>
+                        <p>We block HTTP. No unencrypted traffic</p>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- end -->
+
+<!-- mix container -->
+<div class='mix__main_container'>
+    <div class='mix_content_container'>
+        <div class='mix_content'>
+            <h1 class='mix_content_header'>Mix Wasabi Change Coins</h1>
+            <p class='mix_p'>Safely mix <q>Toxic Waste</q> Change Coins produced from Wasabi CoinJoins!</p>
+            <p class='mix_p'>Consolidate change outputs into one coin.</p>
+            <a href='https://anonymixer.com/help/wasabi-change-coins'>
+               <button class='mix_button'>Find out more</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+<!-- footer -->
+<footer>
+    <div class="foot_container">
+        <div class="foot_col_container">
+
+            <div class="foot_first_col foot">
+                <ul>
+                    <li>Hot Trade Maximum<span class="hot_max">0.1309</span></li>
+                    <li> Cold Trade Maximum<span class="cold_max">0.1309</span></li>
+                    <li> Service Status <span><img src="./image/correct-tick.png"></span></li>
+                </ul>
+            </div>
+
+            <div class="foot_second_col foot">
+                <lable class="foot_link_header">Links</lable>
+                    <ul>
+                        <li><a href="#">PGP Key</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Canary</a></li>
+                        <li>Email:<a href="#">support@anonymixer.com</a></li>
+                    </ul>
+                    <div class="foot_icons">
+                        <div class="tooltip-bitcoin">
+                        <img class="img_bc" src="./image/bit-coin.png">
+                        
+                        <span class="bitcoin-tooltiptext">Bitcoin Talk</span>
+                        </div>
+                        <div class="tooltip-twitter">
+                        <img class="img_twit" src="./image/twitter1.png">
+
+                        <span class="twitter-tooltiptext">Twitter</span>
+                        </div>
+                        <div class="tooltip-dark">
+                        <img class="img_dar-k" src="./image/darkimg10.png">
+                        <span class="dark-tooltiptext">Darknetive</span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="foot_third_col foot">
+                <lable class="foot_link_header">Clearnet Address</lable>
+                <ul>
+                    <li><a href="#">https://anonymixer.com</a></li>
+                    <li>
+                        <div>
+                            <div>
+                                <img src="./image/onion.png">
+                            </div>
+                            <div class="tooltip_content">    
+                                <div>
+                                <span><a>Onion V2</a></span>
+                                </div>
+                                <div>
+                                <span><a>Onion V3</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="copy"> Copyright © 2022 <a href="#">Anonymixer</a>. All rights reserved.
+        </div>
+    </div>
+</footer>
+<!-- end -->
+
+</body>
+
+
+</html>
+
+
+<!-- <script>
+    $(".top_right_dropdown-lag").click(function(){
+       var key = $('li').attr("data-id");
+        $('.top_right_dropbtn').text(key);
+        alert(key);
+    });
+    </script> -->
+<!-- <script>
+ $(".dropdown-content").click(function(){
+    var key = $('a').attr("data-id");
+     $('.dropbtn').text(key);
+     alert(key);
+ });
+ </script> -->
+
+
+
+<!-- 
+@media(max-width: 767px)
+{}
+@media(min-width: 768px)  -->
